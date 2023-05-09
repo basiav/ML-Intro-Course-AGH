@@ -24,4 +24,4 @@ repos:
   hooks:
   # - id: nbqa-black
   - id: nbqa-flake8
-    args: ["--ignore=E402,F401,F821,F841,W291"] # E402 module level import not at top of file
+    args: ["--ignore=E402,F401,F821,F841"] # E402 module level import not at top of file
