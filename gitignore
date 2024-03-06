@@ -1,0 +1,9 @@
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+*/images
+.tar
+.gz
+
+lab2/README.md
+lab2/Untitled.ipnyb

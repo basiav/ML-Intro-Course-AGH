@@ -1,0 +1,27 @@
+repos:
+- repo: https://github.com/psf/black
+  rev: 23.3.0
+  hooks:
+  - id: black
+    # language_version: python3.9
+    args: ["--line-length=79", "--ipynb"]
+  # - id: black-jupyter
+
+- repo: https://github.com/pycqa/flake8
+  rev: 4.0.1  # pick a git hash / tag to point to
+  hooks:
+  - id: flake8
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.3.0
+  hooks:
+  - id: check-yaml
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
+
+- repo: https://github.com/nbQA-dev/nbQA
+  rev: 1.7.0
+  hooks:
+  # - id: nbqa-black
+  - id: nbqa-flake8
+    args: ["--ignore=E402,F401,F821,F841,E731,F811"] # E402 module level import not at top of file
